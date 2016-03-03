@@ -1,0 +1,95 @@
+.topo{
+        display:inline-block;
+        width:100%;
+        height:80px;
+        background-color:#135656;
+        border-radius:5px;
+}
+.topo ul{
+        text-align:center;
+        list-style:none;
+}
+.topo li{
+        text-transform:uppercase;
+        display:inline-block;
+        padding: 15px;
+        font-family:'Montserrat', sans-serif;
+}
+.topo li a{
+        background-color:#fff;
+        color: #0c6d51;
+        padding:10px;
+        border-radius:5px;
+        text-decoration:none;
+}
+.topo li a:hover{
+        background-color:#2f7a7a;
+        color:#fff;
+}
+
+#cp{
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	font-size: 15px;
+        margin-top:45px;
+}
+#pre{
+        position:relative;
+        font-size:15px;
+        margin-top:-5px;;
+        font-family:'Montserrat', sans-serif;
+}
+#pre a{
+        color:#fff;
+}	
+#pre a:hover{
+        color:#fff400;
+}
+.rodape{
+     display:inline-block;
+     width:100%;
+     height: 130px;
+     background-color:#135656;
+     text-align:center;
+     border-radius: 5px;
+     margin-top:5px;
+}	
+.conteudo {
+    display: inline-block;
+    width: 100%;
+    height: 800px;
+    background-color: #186c6c;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.conteudo h1{
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+}
+#artigos {
+    display: inline-block;
+    width: 80%;
+    height: 80px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-left: 30px;
+    margin-top: 35px;
+    position: relative;
+    top: -50px;
+}
+#artigos h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    margin-left: 20px;
+    margin-top: 10px;
+    color: #186c6c;
+}			
+#artigos p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    margin-top: -90px;
+    margin-left: 250px;
+    color: #186c6c;
+}

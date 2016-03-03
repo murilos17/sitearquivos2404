@@ -1,0 +1,33 @@
+.login{
+	display: inline-block;
+	width: 400px;
+	height: 250px;
+	background-color: #0c6d51;
+	border-radius: 5px;
+	margin-top: 30px;
+}
+.login table {
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	margin-top: 70px;
+}
+.login input{
+	border-radius: 3px;
+	width: 200px;
+	height: 25px;
+	color: #000;
+	background-color: #fff;
+	border:none;
+}
+#btn_logar{
+	margin-top: 10px;
+	width: 100px;
+	height: 30px;
+	background-color: #fff;
+	font-family: "Montserrat", sans-serif;
+	border:none;
+}
+#btn_logar:hover{
+	background-color: #6ca091;
+	color: #fff;
+}
