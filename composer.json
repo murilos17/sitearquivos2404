@@ -4,7 +4,7 @@
     "homepage": "http://www.arq2404.pe.hu",
     "autoload": {
         "psr-4": {
-            "App\\": "src"
+            "App\\": "src/App"
         }
     }
 }

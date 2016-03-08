@@ -23,14 +23,16 @@ class Usuario
 	public function listaUsuarios()
 	{
 		$sql = 'SELECT * FROM usuario;';
-		$resultado = $this->conexao->query($sql);
+		$stmt = $this->conexao->query($sql);
+		$resultado = $stmt->fetchAll(\PDO::FETCH_ASSOC);
 
-		if ($resultado->num_rows > 0) {
-			foreach ($resultado as $usuario) {
-				var_dump($usuario);
-			}
+		if (empty($resultado)) {
+			echo 'Nenhum usuário encontrado!';
+			die;
 		}
-		echo 'Nenhum usuário encontrado!';
 
+		foreach ($resultado as $usuario) {
+			var_dump($usuario);
+		}
 	}
 }
