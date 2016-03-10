@@ -22,7 +22,7 @@ class Usuario
 
 	public function listaUsuarios()
 	{
-		$sql = 'SELECT * FROM usuario;';
+		$sql = 'SELECT * FROM usuarios;';
 		$stmt = $this->conexao->query($sql);
 		$resultado = $stmt->fetchAll(\PDO::FETCH_ASSOC);
 
