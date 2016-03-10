@@ -13,7 +13,7 @@ class App
 		$url = $this->parseUrl();
 		$controller = ucfirst($url[0]);
 
-		$className = 'App\\Controller\\' . $this->controller;
+		$className = 'App\\Controller\\' . $controller;
 
 		if (class_exists($className)) {
 			$this->controller = $url[0];
@@ -42,6 +42,6 @@ class App
 
 		unset($urlArray[0]);
 
-		return array_values($urlArray)
+		return array_values($urlArray);
 	}
 }

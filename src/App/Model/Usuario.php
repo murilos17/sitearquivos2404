@@ -1,24 +1,19 @@
 <?php
 
-namespace App\Database;
+namespace App\Model;
 
+use App\Database\Conexao;
 /**
 * 
 */
 class Usuario 
 {
-	public $id;
-	public $nome;
-	public $senha;
-	public $dtCriacao;
-
 	private $conexao;
 
 	public function __construct()
 	{
 		$this->conexao = new Conexao();	
 	}
-
 
 	public function listaUsuarios()
 	{
@@ -27,12 +22,15 @@ class Usuario
 		$resultado = $stmt->fetchAll(\PDO::FETCH_ASSOC);
 
 		if (empty($resultado)) {
-			echo 'Nenhum usuário encontrado!';
-			die;
+			return [
+            	'sucesso' => false, 
+				'mensagem' => 'Nenhum usuário encontrado!'
+			];
 		}
 
-		foreach ($resultado as $usuario) {
-			var_dump($usuario);
-		}
+		return [
+			'sucesso' => true,
+			'dados' => $resultado
+		];
 	}
 }

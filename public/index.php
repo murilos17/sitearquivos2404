@@ -2,10 +2,8 @@
 /**
  * Front controler
  */
-
-use App\Database\Usuario;
+use App\Core\App;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-$a = new Usuario();
-$a->listaUsuarios();
+$bootstrap = new App();
